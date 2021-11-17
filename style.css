@@ -1,0 +1,347 @@
+:root {
+    /*Primary colors*/
+       --clr-primary-White: #fff;
+       --clr-primary-black: #000;
+    /*Neutral colors*/
+       --clr-secondary-green: green;
+       --clr-secondary-gray: #e7e7e7d3;
+    
+   }
+     
+     
+   /*reset the page*/
+   body{
+       font-size: 1.125rem;
+       min-height: 100vh;
+       scroll-behavior: smooth;
+       text-rendering: optimizeSpeed;
+       line-height: 1.5;
+       text-align: center;
+       font-family: var(--ff-primary);
+       background-color: var(--clr-primary-White);
+       color: var(--clr-primary-black);
+   }
+   
+   *, *:before, *:after {
+       box-sizing: border-box;
+     }
+   
+   body,
+   h1,
+   h2,
+   h3,
+   h4,
+   p,
+   ul,
+   ol,
+   li {
+       margin: 0;
+       padding: 0;
+       line-height: 1.5rem;
+       
+   }
+   
+   a:link, a:visited, a:active {
+     text-decoration:none;
+   }
+   
+   li,
+   ul,
+   ol {
+     list-style: none;
+     
+   }
+   
+   img {
+       max-width: 100%;
+       
+     }
+   
+   input,
+   button,
+   textarea,
+   select {
+       font: inherit;
+     }
+   
+   /*top page*/
+   #header{
+       position: fixed;
+       display: flex;
+       width: 100%;
+       justify-content: space-around;
+       align-items: center;
+       top: 0;
+       background-color: var(--clr-secondary-green);
+       height: 2.8rem;
+       
+   }
+   
+   #header-img{
+       width: 2rem;
+   }
+   /*title top menu*/
+   .header_title{
+       margin-left: 1rem;
+       color: black;
+       font-size: 150%;
+      
+   }
+   /*menu dropdown*/
+   #nav-bar{
+       position: absolute;
+       display: none;
+       background-color: var(--clr-primary-black);
+       height: 25vh;
+       width: 60vw;
+       text-align: center;
+       padding-top: .2rem;
+   }
+   /*container of dropdown*/
+   .nav_container{
+       width: 60vw;
+       text-align: right;
+   }
+   
+   
+   /*letter dropdow*/
+   #nav-bar a{
+       color: var(--clr-primary-White);
+       padding-top: .5rem;
+   }
+   /*letter dropdow hover*/
+   #nav-bar a:hover{
+       color: var(--clr-secondary-gray);
+      
+     }
+   
+   /*hover menu dropdown*/
+   .nav_container:hover #nav-bar{
+       cursor: pointer;
+       display: flex;
+       flex-direction: column;
+       
+     }
+   /*inside dropdown*/
+   .navbar-btn {
+       background-color: var(--clr-primary-black);
+       color: var(--clr-primary-White);
+       font-size: 1.3rem;
+       border-radius: 0.7rem;
+       padding: 0.3rem 0.5rem;
+       opacity: 0.8;
+       cursor: pointer;
+   }
+   
+   /*description of de product*/
+   #description{
+       padding-top: 5.5rem;
+   
+     }
+   
+   /*input email*/
+   #form{
+       display: flex;
+       flex-direction: column;
+       gap: 1.2rem;
+       margin-top: 1.5rem;
+       align-items: center;
+   }
+   
+   #email{
+       text-align: center;
+       color: var(--clr-primary-black);
+       background-color: var(--clr-secondary-gray);
+       font-size: 1.1rem;
+       width: 18rem;
+       padding: .3rem 0;
+   }
+   
+   #submit{
+       text-align: center;
+       color: var(--clr-primary-White);
+       background-color: var(--clr-secondary-green);
+       font-size: 1.1rem;
+       width: 8rem;
+       border: 0.2rem solid var(--clr-primary-black);
+       cursor: pointer;
+   }
+   
+   /*features of the bike*/
+   #features{
+       font-size: 1.2rem;
+       margin: 0 1rem;
+   }
+   
+   .features_text{
+       margin-top: 2.5rem;
+       
+   }
+   
+   #video{
+       margin-top: 2rem;
+       width: 60vh;
+       height: 16rem;
+   }
+   
+   /*recommended section*/
+   #recommend{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
+   .recommend_title{
+       margin-top: 2rem;
+       font-size: 1.5rem;
+   }
+   /*first motorcycle*/
+   #bikes{
+       margin-top: 2rem;
+       border: 0.2rem solid var(--clr-primary-black);
+       display: flex;
+       flex-direction: column;
+       gap: 1rem;
+       max-width: 19rem;
+       padding: 0;
+       
+   }
+   
+   .bikes_title{
+       background-color: var(--clr-secondary-green);
+       border: 0.1rem solid var(--clr-primary-black);
+       font-size: 1.3rem;
+       box-shadow: -.1rem 0 green;
+      
+   }
+   
+   .bikes_btn{
+       width: 7rem;
+       margin: auto;
+       background-color: var(--clr-secondary-green);
+       color: var(--clr-primary-White);
+       border: 0.2rem solid var(--clr-primary-black);
+       font-size: 1.2rem;
+       margin-bottom: 0.1rem;
+       cursor: pointer;
+   }
+   
+   /*Second motorcycle*/
+   
+   #bikes2{
+       margin-top: 2rem;
+       border: 0.2rem solid var(--clr-primary-black);
+       display: flex;
+       flex-direction: column;
+       gap: .5rem;
+       max-width: 100%;
+      
+       
+   }
+   
+   .bikes_title2{
+       background-color: var(--clr-secondary-green);
+       border: 0.1rem solid var(--clr-primary-black);
+       font-size: 1.3rem;
+       box-shadow: -.1rem 0 green;
+   }
+   
+   .bikes_btn2{
+       width: 7rem;
+       margin: auto;
+       background-color: var(--clr-secondary-green);
+       color: var(--clr-primary-White);
+       border: 0.2rem solid var(--clr-primary-black);
+       font-size: 1.2rem;
+       margin-bottom: 0.1rem;  
+       cursor: pointer;
+   }
+   
+   /*footer section*/
+   #footer{
+       margin-top: 2rem;
+       background-color: var(--clr-secondary-gray);
+   }
+   
+   .contact{
+       display: flex;
+       justify-content: right;
+       gap: 1rem;
+       margin-right: 1rem;
+       font-size: 1rem;
+   }
+   
+   .contact li a{
+       color: var(--clr-primary-black);
+   }
+   
+   .copyright{
+       text-align: right;
+       font-size: 1rem;
+       margin-right: 1rem;
+   }
+   
+   /*Media Query*/
+   
+   @media(min-width: 48rem){
+       .navbar-btn{
+           display: none;
+       }
+   
+       #nav-bar{
+           display: block;
+           display: flex;
+           text-align: right;
+           float: right;
+           position: static;
+           background-color: var(--clr-primary-black);
+           height: 0;
+           width: 10rem;
+           padding-top:0;
+           gap: 1rem;
+           font-size: 1.4rem;
+           font-weight: 600;
+           margin-bottom: .4rem;
+       }
+   
+       /*letter dropdow*/
+       #nav-bar a{
+           color: var(--clr-primary-black);
+           padding-top: 0;
+       }
+       /*letter dropdow hover*/
+       #nav-bar a:hover{
+           color: var(--clr-primary-White);
+      
+       }
+   
+       /*hover menu dropdown*/
+       .nav_container:hover #nav-bar{
+           cursor: pointer;
+           flex-direction: row;
+       
+       }
+   
+       /*features title*/
+       #description{
+           margin-top: 2rem;
+       }
+   
+       /*features of the bike*/
+       #features{
+           margin: 0 6rem;
+       }
+   
+       .features_text{
+           margin-top: 4rem;
+           line-height: 1.8rem;
+       
+       }
+   
+       /*recommended section*/
+       .bikes_container{
+           display: flex;
+           gap: 1rem;
+       }
+   
+       
+   }
